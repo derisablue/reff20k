@@ -34,21 +34,21 @@ if ($register == false)
       else
         {
         file_put_contents("token/".$verif['data']['customer']['name'].".txt", $verif['data']['access_token']);
-        echo "\e[93m[X] Mencoba Redeem : VOUCHER FOOD 30K\n";
+        echo "\e[93m[X] Mencoba Redeem : G-MW37F5C\n";
         sleep(3);
         $claim = claim($verif);
         if ($claim == false)
             {
             echo "\e[92m[!]".$voucher."\n";
             sleep(3);
-            echo "\e[93m[X] Mencoba Redeem : VOUCHER FOOD 25K\n";
+            echo "\e[93m[X] Mencoba Redeem : G-K9RT6VC\n";
             sleep(3);
             goto next;
             }
             else{
                 echo "\e[92m[X] ".$claim."\n";
                 sleep(3);
-                echo "\e[93m[X] Mencoba Redeem : VOUCHER FOOD 20K\n";
+                echo "\e[93m[X] Mencoba Redeem : G-C99FGCK\n";
                 sleep(3);
                 goto ride;
             }
@@ -57,14 +57,14 @@ if ($register == false)
             if ($claim == false) {
                 echo "\e[92m[!]".$claim['errors'][0]['message']."\n";
                 sleep(3);
-                echo "\e[93m[X] Coba Dulu Redeem : GOFOODSANTAI20K !\n";
+                echo "\e[93m[X] Coba Dulu Redeem : G-8M2MS9Q !\n";
                 sleep(3);
                 goto next1;
             }
             else{
                 echo "\e[92m[X] ".$claim."\n";
                 sleep(3);
-                echo "\e[93m[X] Coba Dulu Redeem : COBAINGOJEK !\n";
+                echo "\e[93m[X] Coba Dulu Redeem : G-5CCGF3L !\n";
                 sleep(3);
                 goto ride;
             }
@@ -73,7 +73,7 @@ if ($register == false)
             if ($claim == false) {
                 echo "\e[92m[!]".$claim['errors'][0]['message']."\n";
                 sleep(3);
-                echo "\e[93m[X] Coba Dulu Redeem : COBAINGOJEK !\n";
+                echo "\e[93m[X] Coba Dulu Redeem : G-KMDXGVG !\n";
                 sleep(3);
                 goto ride;
             }
@@ -81,7 +81,7 @@ if ($register == false)
             {
             echo "\e[92m[X] ".$claim . "\n";
             sleep(3);
-            echo "\e[93m[X] Coba Dulu Redeem : COBAINGOJEK !\n";
+            echo "\e[93m[X] Coba Dulu Redeem : G-MW37F5C !\n";
             sleep(3);
             goto ride;
             }
@@ -90,7 +90,7 @@ if ($register == false)
             if ($claim == false ) {
                 echo "\e[92m[!]".$claim['errors'][0]['message']."\n";
                 sleep(3);
-                echo "\e[93m[X] Coba Dulu Redeem : AYOCOBAGOJEK !\n";
+                echo "\e[93m[X] Coba Dulu Redeem : G-K9RT6VC !\n";
                 sleep(3);
 
             }
@@ -98,7 +98,7 @@ if ($register == false)
             {
                 echo "\e[92m[X] ".$claim."\n";
                 sleep(3);
-                echo "\e[93m[X] Coba Dulu Redeem : AYOCOBAGOJEK !\n";
+                echo "\e[93m[X] Coba Dulu Redeem : G-C99FGCK !\n";
                 sleep(3);
                 goto pengen;
             }
